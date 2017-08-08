@@ -3,6 +3,7 @@ FROM daocloud.io/centos
 # Install the Nginx.org CentOS repo.
 RUN mv -fv /etc/yum.repos.d/*.repo /tmp
 ADD nginx.repo /etc/yum.repos.d/nginx.repo
+COPY index.html /usr/share/nginx/html/index.html
 
 
 # Install base stuff.

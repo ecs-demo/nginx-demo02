@@ -1,0 +1,22 @@
+[base]
+name=CentOS-$releasever - Base
+baseurl=http://mirrors.163.com/centos/$releasever/os/$basearch/
+gpgcheck=0
+
+#released updates 
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=http://mirrors.163.com/centos/$releasever/updates/$basearch/
+gpgcheck=0
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=http://mirrors.163.com/centos/$releasever/extras/$basearch/
+gpgcheck=0
+
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
